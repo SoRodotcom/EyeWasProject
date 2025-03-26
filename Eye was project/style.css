@@ -33,15 +33,15 @@ nav {
     border-top: 2px solid #b89b5e; /* Ligne orange du haut */
     border-bottom: none; /* Suppression du second border-bottom */
 }
-/* LIGNE ORANGE DU BAS DÉCALÉE */
+/* LIGNE ORANGE DU BAS Dï¿½CALï¿½E */
 nav::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
-    height: 2px; /* Épaisseur */
-    background: #b89b5e; /* Couleur dorée/orange */
-    bottom: -6px; /* Décalage légèrement plus bas */
+    height: 2px; /* ï¿½paisseur */
+    background: #b89b5e; /* Couleur dorï¿½e/orange */
+    bottom: -6px; /* Dï¿½calage lï¿½gï¿½rement plus bas */
 }
 nav ul {
     list-style: none;
@@ -72,7 +72,7 @@ nav a:hover {
     background: #b89b5e;
     color: black;
     border-radius: 5px;
-    transform: scale(1.05); /* Zoom léger */
+    transform: scale(1.05); /* Zoom lï¿½ger */
 }
 main {
     flex: 1;
@@ -87,8 +87,8 @@ main {
 .accueil-text p {
     font-size: 22px;
     line-height: 1.8;
-	margin-top: 2px; /* Espacement au-dessus réduit */
-    margin-bottom: 8px; /* Espacement en-dessous réduit */
+	margin-top: 2px; /* Espacement au-dessus rï¿½duit */
+    margin-bottom: 8px; /* Espacement en-dessous rï¿½duit */
 
 }
 .menu-accueil {
@@ -124,14 +124,15 @@ main {
     margin: 0 auto;
 }
 
-/* Conteneur pour les éléments en bas (les boutons et l'image) */
+/* Conteneur pour les ï¿½lï¿½ments en bas (les boutons et l'image) */
 .accueil-bottom {
     display: flex;
-    justify-content: space-between; /* Espacement entre les éléments */
-    align-items: flex-start; /* Aligne les éléments en haut */
+    justify-content: space-between; /* Espacement entre les ï¿½lï¿½ments */
+    align-items: flex-start; /* Aligne les ï¿½lï¿½ments en haut */
     gap: 50px; /* Espacement entre l'image et les boutons */
 
 }
+
 
 /* Menu des boutons */
 .menu-accueil {
@@ -144,8 +145,8 @@ main {
 }
 
 .accueil-text .section p:first-of-type {
-    margin-top: 5px; /* Réduit l'espacement avant le premier paragraphe */
-    margin-bottom: 5px; /* Réduit l'espacement après le premier paragraphe */
+    margin-top: 5px; /* Rï¿½duit l'espacement avant le premier paragraphe */
+    margin-bottom: 5px; /* Rï¿½duit l'espacement aprï¿½s le premier paragraphe */
 }
 
 
@@ -153,7 +154,7 @@ main {
     background: none;
     border: 2px solid black; /* Cadre fin noir */
     color: #1c1c1c; /* Couleur du texte */
-    font-size: 18px; /* Taille réduite */
+    font-size: 18px; /* Taille rï¿½duite */
     font-weight: normal;
     text-transform: none;
     cursor: pointer;
@@ -162,7 +163,7 @@ main {
     display: flex;
     align-items: center; /* Centrage vertical */
     justify-content: center; /* Centrage horizontal */
-    border-radius: 5px; /* Bords légèrement arrondis */
+    border-radius: 5px; /* Bords lï¿½gï¿½rement arrondis */
     margin: 7px;
 }
 
@@ -210,7 +211,7 @@ main {
 }
 
 .accueil-container .image-box {
-    flex: 1; /* Permet à l'image de prendre la place disponible */
+    flex: 1; /* Permet ï¿½ l'image de prendre la place disponible */
     max-width: 500px; /* Limite la largeur de l'image */
 }
 
@@ -231,13 +232,13 @@ main {
     gap: 40px;
     margin-top: 20px;
 }
-/* Conteneur de la première image */
+/* Conteneur de la premiï¿½re image */
 .image-box {
     flex: 1;
     max-width: 90%; /* Augmenter la largeur */
     margin: auto;
 }
-/* Première image agrandie */
+/* Premiï¿½re image agrandie */
 .image-box img {
     width: 100%; /* L'image prendra toute la largeur de son conteneur */
     max-width: 1000px; /* Vous pouvez augmenter cette valeur selon vos besoins */
@@ -256,12 +257,12 @@ main {
     gap: 20px; /* Espacement horizontal entre l'image et le texte */
     margin-top: 20px; /* Espacement au-dessus */
     max-width: 1200px; /* Largeur maximale du conteneur */
-    padding: 20px; /* Ajout d'un padding autour pour une meilleure aération */
+    padding: 20px; /* Ajout d'un padding autour pour une meilleure aï¿½ration */
 }
-/* Image à gauche (plus grande) */
+/* Image ï¿½ gauche (plus grande) */
 .image-left {
     flex: 1;
-    max-width: 60%;  /* Limite la largeur de l'image à 60% */
+    max-width: 60%;  /* Limite la largeur de l'image ï¿½ 60% */
 }
 /* Image */
 .image-left img {
@@ -272,44 +273,44 @@ main {
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
-/* Texte à droite */
+/* Texte ï¿½ droite */
 .text-right {
     flex: 0,8;
     max-width: 60%;  /* Ajuste la largeur du texte pour qu'il prenne 60% de l'espace */
     text-align: left;
-    font-size: 15px; /* Réduction de la taille du texte */
+    font-size: 15px; /* Rï¿½duction de la taille du texte */
     line-height: 1.8;
-    padding-left: 20px; /* Ajout d'un peu d'espace à gauche */
+    padding-left: 20px; /* Ajout d'un peu d'espace ï¿½ gauche */
 }
 
 
 
-/* Espace entre les éléments dans les sections */
+/* Espace entre les ï¿½lï¿½ments dans les sections */
 h2, h3, h4 {
     margin-bottom: 10px; /* Ajout de marges en bas des titres */
 }
 ul {
-    padding-left: 20px; /* Ajout de padding à gauche pour aligner les puces */
+    padding-left: 20px; /* Ajout de padding ï¿½ gauche pour aligner les puces */
     margin-bottom: 20px; /* Espacement sous les listes */
 }
 h4 {
     font-size: 26px; /* Augmente la taille du texte */
-    font-weight: bold; /* Rend le texte plus épais */
+    font-weight: bold; /* Rend le texte plus ï¿½pais */
     text-transform: uppercase; /* Met en majuscules pour plus d'impact */
-    color: #1c1c1c; /* Assure une bonne lisibilité */
+    color: #1c1c1c; /* Assure une bonne lisibilitï¿½ */
     margin-bottom: 15px; /* Ajoute un espace en dessous */
 }
 h5 {
     font-size: 26px; /* Augmente la taille du texte */
-    font-weight: bold; /* Rend le texte plus épais */
+    font-weight: bold; /* Rend le texte plus ï¿½pais */
     text-transform: uppercase; /* Met en majuscules pour plus d'impact */
-    color: #1c1c1c; /* Assure une bonne lisibilité */
+    color: #1c1c1c; /* Assure une bonne lisibilitï¿½ */
     margin-bottom: 15px; /* Ajoute un espace en dessous */
 }
 h6 {
     font-size: 26px; /* Augmente la taille du texte */
-    font-weight: bold; /* Rend le texte plus épais */
-    color: #1c1c1c; /* Assure une bonne lisibilité */
+    font-weight: bold; /* Rend le texte plus ï¿½pais */
+    color: #1c1c1c; /* Assure une bonne lisibilitï¿½ */
 	text-transform: uppercase; /* Met en majuscules pour plus d'impact */
     margin-bottom: 15px; /* Ajoute un espace en dessous */
 	margin-top: 12px
@@ -325,8 +326,8 @@ h6 {
     gap: 20px;
     margin-top: 20px;
 	max-width: 1200px; /* Largeur maximale du conteneur */
-    padding: 20px; /* Ajout d'un padding autour pour une meilleure aération */
-    flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe à droite */
+    padding: 20px; /* Ajout d'un padding autour pour une meilleure aï¿½ration */
+    flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe ï¿½ droite */
 }
 .image-calamar img {
     width: 80%;
@@ -338,8 +339,8 @@ h6 {
     border: 2px solid #b89b5e;
 }
 .image-calamar {
-    flex: 1;  /* Augmente la place accordée à l’image */
-    max-width: 70%; /* Ajuste la largeur de l’image */
+    flex: 1;  /* Augmente la place accordï¿½e ï¿½ lï¿½image */
+    max-width: 70%; /* Ajuste la largeur de lï¿½image */
 }
 .texte-calamar {
     flex: 1;
@@ -358,7 +359,7 @@ h6 {
     gap: 20px;
     background: #ffffff;
     max-width: 900px;
-	flex-direction: row-reverse; /* Inversion de l'ordre pour mettre l'image à gauche */
+	flex-direction: row-reverse; /* Inversion de l'ordre pour mettre l'image ï¿½ gauche */
 }
 .image-box-Etapes img {
     max-width: 600px; /* Augmente la taille maximale */
@@ -374,15 +375,15 @@ h6 {
 .solution-container {
     display: flex;
     align-items: center; /* Aligner verticalement */
-    justify-content: flex-start; /* Image à gauche, texte à droite */
-    gap: 5px; /* Espacement entre l’image et le texte */
+    justify-content: flex-start; /* Image ï¿½ gauche, texte ï¿½ droite */
+    gap: 5px; /* Espacement entre lï¿½image et le texte */
     margin-top: 20px;
-    max-width: 950px; /* Conteneur élargi */
+    max-width: 950px; /* Conteneur ï¿½largi */
     padding: 10px;
-	flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe à droite */
+	flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe ï¿½ droite */
 }
 .solution-box img {
-    width: 75%; /* FORÇE l’image à prendre toute la largeur possible */
+    width: 75%; /* FORï¿½E lï¿½image ï¿½ prendre toute la largeur possible */
     height: auto;
     min-width: 100px; /* MINIMUM de largeur */
     max-width: 600px; /* MAXIMUM de largeur */
@@ -392,10 +393,10 @@ h6 {
 }
 /* Image du tableau (AUGMENTATION DE LA TAILLE) */
 .solution-box {
-    flex: 1;  /* Augmente la place accordée à l’image */
-    max-width: 70%; /* Ajuste la largeur de l’image */
+    flex: 1;  /* Augmente la place accordï¿½e ï¿½ lï¿½image */
+    max-width: 70%; /* Ajuste la largeur de lï¿½image */
 }
-/* Texte à droite */
+/* Texte ï¿½ droite */
 .solution-texet {
     flex: 1;
     max-width: 60%;
