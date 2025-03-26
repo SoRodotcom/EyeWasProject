@@ -2,15 +2,15 @@ body {
     font-family: 'Merriweather', serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f7f4;
+    background-color: #eff6ee;
     color: #2c2c2c;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 header {
-    background: #006985;
-    color: white;
+    background: #273043;
+    color: #eff6ee;
     text-align: center;
     padding: 40px 0;
     font-size: 28px;
@@ -25,12 +25,12 @@ header {
 
 /* ?? STYLE DU MENU DE NAVIGATION */
 nav {
-    background: #006985;
+    background: #273043;
     width: 100%;
     padding: 12px 0; /* Ajustement du padding */
     text-align: center;
     position: relative;
-    border-top: 2px solid #b89b5e; /* Ligne orange du haut */
+    border-top: 2px solid #9197ae; /* Ligne orange du haut */
     border-bottom: none; /* Suppression du second border-bottom */
 }
 /* LIGNE ORANGE DU BAS D�CAL�E */
@@ -40,7 +40,7 @@ nav::after {
     left: 0;
     width: 100%;
     height: 2px; /* �paisseur */
-    background: #b89b5e; /* Couleur dor�e/orange */
+    background: #9197ae; /* Couleur dor�e/orange */
     bottom: -6px; /* D�calage l�g�rement plus bas */
 }
 nav ul {
@@ -58,7 +58,7 @@ nav li {
 }
 /* ?? STYLE DU BOUTON "ACCUEIL" (SANS BRILLANCE) */
 nav a {
-    color: white;
+    color: #eff6ee;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -69,7 +69,7 @@ nav a {
 }
 /* Effet au survol (sans brillance) */
 nav a:hover {
-    background: #b89b5e;
+    background: #9197ae;
     color: black;
     border-radius: 5px;
     transform: scale(1.05); /* Zoom l�ger */
@@ -103,11 +103,11 @@ main {
     display: none;
     max-width: 900px;
     margin: auto;
-    background: white;
+    background: #eff6ee;
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border-left: 5px solid #b89b5e;
+    border-left: 5px solid #9197ae;
     text-align: justify;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -176,7 +176,7 @@ main {
 .section h2 {
     color: #1c1c1c;
     font-size: 32px;
-    border-bottom: 3px solid #b89b5e;
+    border-bottom: 3px solid #9197ae;
     display: inline-block;
     padding-bottom: 8px;
     text-transform: uppercase;
@@ -243,7 +243,7 @@ main {
     width: 100%; /* L'image prendra toute la largeur de son conteneur */
     max-width: 1000px; /* Vous pouvez augmenter cette valeur selon vos besoins */
     height: auto;
-    border: 5px solid #b89b5e;
+    border: 5px solid #9197ae;
     border-radius: 12px;   
 }
 
@@ -269,7 +269,7 @@ main {
     width: 100%;
     height: auto;
     max-width: 1200px; /* Agrandissement de l'image */
-    border: 2px solid #b89b5e;
+    border: 2px solid #9197ae;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
@@ -336,7 +336,7 @@ h6 {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    border: 2px solid #b89b5e;
+    border: 2px solid #9197ae;
 }
 .image-calamar {
     flex: 1;  /* Augmente la place accord�e � l�image */
@@ -357,7 +357,7 @@ h6 {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background: #ffffff;
+    background: #fffbdb;
     max-width: 900px;
 	flex-direction: row-reverse; /* Inversion de l'ordre pour mettre l'image � gauche */
 }
@@ -367,7 +367,7 @@ h6 {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-	border: 2px solid #b89b5e;
+	border: 2px solid #9197ae;
 }
 
 
@@ -387,7 +387,7 @@ h6 {
     height: auto;
     min-width: 100px; /* MINIMUM de largeur */
     max-width: 600px; /* MAXIMUM de largeur */
-    border: 2px solid #b89b5e;
+    border: 2px solid #9197ae;
     border-radius: 12px;
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
 }
@@ -414,9 +414,9 @@ h6 {
     margin-top: 20px;
 }
 .prev-btn, .next-btn {
-    background-color: #b89b5e;
+    background-color: #9197ae;
     border: none;
-    color: white;
+    color: #eff6ee;
     font-size: 24px;
     padding: 10px 15px;
     cursor: pointer;
@@ -435,13 +435,13 @@ h6 {
 
 
 footer {
-    background: #006985;
-    color: white;
+    background: #273043;
+    color: #eff6ee;
     text-align: center;
     padding: 25px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    border-top: 3px solid #b89b5e;
+    border-top: 3px solid #9197ae;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
 }
 
