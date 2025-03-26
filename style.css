@@ -1,0 +1,451 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f7f4;
+    color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background: #006985;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ?? STYLE DU MENU DE NAVIGATION */
+nav {
+    background: #006985;
+    width: 100%;
+    padding: 12px 0; /* Ajustement du padding */
+    text-align: center;
+    position: relative;
+    border-top: 2px solid #b89b5e; /* Ligne orange du haut */
+    border-bottom: none; /* Suppression du second border-bottom */
+}
+/* LIGNE ORANGE DU BAS D�CAL�E */
+nav::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px; /* �paisseur */
+    background: #b89b5e; /* Couleur dor�e/orange */
+    bottom: -6px; /* D�calage l�g�rement plus bas */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+nav li {
+    margin: 0;
+    padding: 0;
+}
+/* ?? STYLE DU BOUTON "ACCUEIL" (SANS BRILLANCE) */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    position: relative;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+/* Effet au survol (sans brillance) */
+nav a:hover {
+    background: #b89b5e;
+    color: black;
+    border-radius: 5px;
+    transform: scale(1.05); /* Zoom l�ger */
+}
+main {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+
+.accueil-text p {
+    font-size: 22px;
+    line-height: 1.8;
+	margin-top: 2px; /* Espacement au-dessus r�duit */
+    margin-bottom: 8px; /* Espacement en-dessous r�duit */
+
+}
+.menu-accueil {
+    list-style: none; /* Supprime les points */
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.section {
+    display: none;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-left: 5px solid #b89b5e;
+    text-align: justify;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+/* Conteneur principal */
+.accueil-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Conteneur pour les �l�ments en bas (les boutons et l'image) */
+.accueil-bottom {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les �l�ments */
+    align-items: flex-start; /* Aligne les �l�ments en haut */
+    gap: 50px; /* Espacement entre l'image et les boutons */
+
+}
+
+
+/* Menu des boutons */
+.menu-accueil {
+    list-style: none; /* Supprime les points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Aligner les boutons verticalement */
+    justify-content: flex-start; /* Aligne les boutons en haut */
+}
+
+.accueil-text .section p:first-of-type {
+    margin-top: 5px; /* R�duit l'espacement avant le premier paragraphe */
+    margin-bottom: 5px; /* R�duit l'espacement apr�s le premier paragraphe */
+}
+
+
+.menu-accueil button {
+    background: none;
+    border: 2px solid black; /* Cadre fin noir */
+    color: #1c1c1c; /* Couleur du texte */
+    font-size: 18px; /* Taille r�duite */
+    font-weight: normal;
+    text-transform: none;
+    cursor: pointer;
+    width: 500px; /* Largeur fixe pour uniformiser tous les cadres */
+    height: 42px; /* Hauteur uniforme */
+    display: flex;
+    align-items: center; /* Centrage vertical */
+    justify-content: center; /* Centrage horizontal */
+    border-radius: 5px; /* Bords l�g�rement arrondis */
+    margin: 7px;
+}
+
+
+
+.section.active {
+    display: block;
+    opacity: 1;
+}
+.section h2 {
+    color: #1c1c1c;
+    font-size: 32px;
+    border-bottom: 3px solid #b89b5e;
+    display: inline-block;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+}
+.section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+	
+}
+.section p strong {
+    color: #8b0000;
+}
+.section p em {
+    color: #0a5ea8;
+    font-style: italic;
+}
+.section img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    
+}
+.accueil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer horizontalement */
+    gap: 40px; /* Espacement entre l'image et les boutons */
+    margin-top: 50px;
+}
+
+.accueil-container .image-box {
+    flex: 1; /* Permet � l'image de prendre la place disponible */
+    max-width: 500px; /* Limite la largeur de l'image */
+}
+
+.accueil-container .menu-accueil {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Aligner les boutons verticalement */
+    justify-content: center; /* Centrer les boutons verticalement */
+}
+
+
+
+/* Conteneur principal pour la mise en page */
+.histoire-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+/* Conteneur de la premi�re image */
+.image-box {
+    flex: 1;
+    max-width: 90%; /* Augmenter la largeur */
+    margin: auto;
+}
+/* Premi�re image agrandie */
+.image-box img {
+    width: 100%; /* L'image prendra toute la largeur de son conteneur */
+    max-width: 1000px; /* Vous pouvez augmenter cette valeur selon vos besoins */
+    height: auto;
+    border: 5px solid #b89b5e;
+    border-radius: 12px;   
+}
+
+
+
+/* Conteneur de l'image et du texte */
+.image-text-container {
+    display: flex;
+    align-items: center;  /* Alignement vertical */
+    justify-content: space-between; /* Espacement uniforme */
+    gap: 20px; /* Espacement horizontal entre l'image et le texte */
+    margin-top: 20px; /* Espacement au-dessus */
+    max-width: 1200px; /* Largeur maximale du conteneur */
+    padding: 20px; /* Ajout d'un padding autour pour une meilleure a�ration */
+}
+/* Image � gauche (plus grande) */
+.image-left {
+    flex: 1;
+    max-width: 60%;  /* Limite la largeur de l'image � 60% */
+}
+/* Image */
+.image-left img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; /* Agrandissement de l'image */
+    border: 2px solid #b89b5e;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+/* Texte � droite */
+.text-right {
+    flex: 0,8;
+    max-width: 60%;  /* Ajuste la largeur du texte pour qu'il prenne 60% de l'espace */
+    text-align: left;
+    font-size: 15px; /* R�duction de la taille du texte */
+    line-height: 1.8;
+    padding-left: 20px; /* Ajout d'un peu d'espace � gauche */
+}
+
+
+
+/* Espace entre les �l�ments dans les sections */
+h2, h3, h4 {
+    margin-bottom: 10px; /* Ajout de marges en bas des titres */
+}
+ul {
+    padding-left: 20px; /* Ajout de padding � gauche pour aligner les puces */
+    margin-bottom: 20px; /* Espacement sous les listes */
+}
+h4 {
+    font-size: 26px; /* Augmente la taille du texte */
+    font-weight: bold; /* Rend le texte plus �pais */
+    text-transform: uppercase; /* Met en majuscules pour plus d'impact */
+    color: #1c1c1c; /* Assure une bonne lisibilit� */
+    margin-bottom: 15px; /* Ajoute un espace en dessous */
+}
+h5 {
+    font-size: 26px; /* Augmente la taille du texte */
+    font-weight: bold; /* Rend le texte plus �pais */
+    text-transform: uppercase; /* Met en majuscules pour plus d'impact */
+    color: #1c1c1c; /* Assure une bonne lisibilit� */
+    margin-bottom: 15px; /* Ajoute un espace en dessous */
+}
+h6 {
+    font-size: 26px; /* Augmente la taille du texte */
+    font-weight: bold; /* Rend le texte plus �pais */
+    color: #1c1c1c; /* Assure une bonne lisibilit� */
+	text-transform: uppercase; /* Met en majuscules pour plus d'impact */
+    margin-bottom: 15px; /* Ajoute un espace en dessous */
+	margin-top: 12px
+}
+
+
+
+/* Espacement entre les images et les textes dans la section du calamar */
+.calamar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+	max-width: 1200px; /* Largeur maximale du conteneur */
+    padding: 20px; /* Ajout d'un padding autour pour une meilleure a�ration */
+    flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe � droite */
+}
+.image-calamar img {
+    width: 80%;
+	min-width: 100px; /* MINIMUM de largeur */
+    max-width: 600px; /* Limitation de la taille de l'image */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid #b89b5e;
+}
+.image-calamar {
+    flex: 1;  /* Augmente la place accord�e � l�image */
+    max-width: 70%; /* Ajuste la largeur de l�image */
+}
+.texte-calamar {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+
+
+.Etapes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #ffffff;
+    max-width: 900px;
+	flex-direction: row-reverse; /* Inversion de l'ordre pour mettre l'image � gauche */
+}
+.image-box-Etapes img {
+    max-width: 600px; /* Augmente la taille maximale */
+    width: 100%; /* Assure que l'image s'adapte au conteneur */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	border: 2px solid #b89b5e;
+}
+
+
+
+.solution-container {
+    display: flex;
+    align-items: center; /* Aligner verticalement */
+    justify-content: flex-start; /* Image � gauche, texte � droite */
+    gap: 5px; /* Espacement entre l�image et le texte */
+    margin-top: 20px;
+    max-width: 950px; /* Conteneur �largi */
+    padding: 10px;
+	flex-direction: row-reverse; /* Inversion de l'ordre : l'image passe � droite */
+}
+.solution-box img {
+    width: 75%; /* FOR�E l�image � prendre toute la largeur possible */
+    height: auto;
+    min-width: 100px; /* MINIMUM de largeur */
+    max-width: 600px; /* MAXIMUM de largeur */
+    border: 2px solid #b89b5e;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+/* Image du tableau (AUGMENTATION DE LA TAILLE) */
+.solution-box {
+    flex: 1;  /* Augmente la place accord�e � l�image */
+    max-width: 70%; /* Ajuste la largeur de l�image */
+}
+/* Texte � droite */
+.solution-texet {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+    font-size: 22px;
+    line-height: 1.8;
+}
+
+
+
+.navigation-arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.prev-btn, .next-btn {
+    background-color: #b89b5e;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+.prev-btn:hover, .next-btn:hover {
+    background-color: #8c753a;
+    transform: scale(1.1);
+}
+.prev-btn:disabled, .next-btn:disabled {
+    background-color: #ccc;
+    cursor: default;
+    transform: none;
+}
+
+
+footer {
+    background: #006985;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-top: 3px solid #b89b5e;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
